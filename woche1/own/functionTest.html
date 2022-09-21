@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.writeln("true");
+    document.writeln((1 === 1).toString());
+
+    function fun1() {
+        return 1;
+    }
+
+    document.writeln((fun1() === 1).toString());
+    document.writeln((fun1(42) === 1).toString());
+
+    function fun2() {
+        return 1;
+    }
+
+    function fun2(arg) {
+        return arg;
+    }
+
+    document.writeln((fun2(1) === 1).toString());
+
+
+    function noReturn() {
+        1;
+    }
+
+    const noReturn2 = () => {
+        1;
+    };
+    const noReturn3 = () => 1;
+    document.writeln((noReturn3() === 1).toString());
+
+
+    const myFun = fun1;
+    const funs = [null, undefined, fun1, fun2(1)];
+    document.writeln((myFun() === 1).toString());
+    document.writeln((funs[2]() === 1).toString());
+    document.writeln((funs[3] === 1).toString());
+
+</script>
+
+</body>
+</html>
