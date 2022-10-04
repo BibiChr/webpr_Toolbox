@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // const T = x => y => x;
+    // const F = x => y => y;
+    // const pair = a => b => f => f(a)(b);
+    // const fst = p => p(T);
+    // const snd = p => p(F);
+    //
+    // const pairEq = a => b => fst(a) === fst(b) && snd(a) === snd(b);
+    // const pairPlus = a => b => pair(fst(a) + fst(b))(snd(a) + snd(b));
+    // const pairMap = f => p => pair(f(fst(p)))(f(snd(p)));
+    //
+    // const oneTwo = pair(1)(2);
+    // const square = x => x*x;
+    // const result = pairMap(square)(oneTwo);
+    // const sum = pairPlus(oneTwo)(oneTwo);
+    //
+    // fst(oneTwo) = 0;
+    // document.writeln(String(pairEq(result)(pair(1)(4))));
+
+    //
+    // const s1 = x => y => z => x;
+    // const s2 = x => y => z => y;
+    // const s3 = x => y => z => z;
+    //
+    // const triple = x => y => z => f => f(x)(y)(z);
+    // const a = t => t(s1);
+    // const b = t => t(s2);
+    // const c = t => t(s3);
+    //
+    // const person = triple;
+    // const firstname = a;
+    // const lastname = b;
+    // const age = c;
+    //
+    // const bran = person("Brendan")("Eich")(50);
+    // // const raven = bran("Stark")(16);
+    // // const eich = bran("Eich")(50);
+    //
+    // // const oneTwoThree = triple(1);
+    // document.writeln(String(firstname(bran) === "Brendan"));
+
+
+    // const Left = x => f => g => f(x);
+    // const Right = x => f => g => g(x);
+    // const either = e => f => g => e(f)(g);
+    //
+    // const safeDiv = num => divisor =>
+    //     divisor === 0
+    //         ? Left("schlecht!")
+    //         : Right(num / divisor);
+    //
+    // const result = safeDiv(1)(1);
+    //
+    // either(result)
+    // (x => document.writeln(x))
+    // (x => document.writeln(String(x ===1)));
+
+    const Left   = x => f => g => f (x);
+    const Right  = x => f => g => g (x);
+    const either = e => f => g => e (f) (g);
+    const id = x => x;
+    const safeDiv = num => divisor =>
+        divisor === 0
+            ? Left("Cannot divide by 0")
+            : Right(num / divisor);
+
+    const eShow = id;
+    document.writeln()
+
+    const x_ = Math.random();
+    document.writeln(String(eShow( safeDiv(1)(0))  === "Cannot divide by 0"))
+    document.writeln(String(eShow( safeDiv(x_)(1)) === "Result is: "+x_))
+
+</script>
+</body>
+</html>
