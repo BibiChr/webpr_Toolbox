@@ -14,25 +14,34 @@ Links zu internen files: [Notizen](woche1/Unterrichtsnotizen.md)<br>
 
 ## Wichtigste Code Snippets
 
+## Programme
+
+- [Snake](woche1/snake)
+- [Ball](woche2/ball)
+
 ## Unterrichtsnotizen
 
 ### Woche 1 Drehbuch, Intro, Functions
 
 - [Präsentation](praesentationen/WebProgramming_1_Drehbuch_und_Intro.pdf)
 - [Unterrichtnotizen](woche1/Unterrichtsnotizen.md)
-- Mitschrieb von [functionTest.html](woche1/own/functionTest.html)
-- Kopie der originalen [functionTest.html](woche1/input/functionsTest.html)
-- Code snippets für das [Quiz](woche1/own/quizCode.html)
+- Mitschrieb von [functionTest.html](woche1/functionTest.html)
+- Code snippets für das [Quiz](woche1/quizCode.html)
 
 ### Woche 2 Scientific foundations
 
 - [Präsentation](praesentationen/WebProgramming_2_Lambda.pdf)
 - [Unterrichtnotizen](woche2/Unterrichtsnotizen.md)
-- Mitschrieb von [scopeTest.html](woche2/own/scopeTest.html)
-- Kopie der originalen [scopeTest.html](woche2/input/scopeTest.html)
-- Code snippets für das [Quiz](woche2/own/quizCode.html)
+- Mitschrieb von [scopeTest.html](woche2/scopeTest.html)
+- Code snippets für das [Quiz](woche2/quizCode.html)
 
 ### Woche 3 Algebraic Data Types, Snake
+
+- [Präsentation](praesentationen/WebProgramming_3_Snake_ADT.pdf)
+- [Unterrichtnotizen](woche3/Unterrichtsnotizen.md)
+- Order für die [AllTests](woche3/AllTests)
+- Mitschrieb von [GoodieConsoleLogLevel.html](woche3/GoodieConsoleLogLevel.html)
+- Code snippets für das [Quiz](woche3/quizCode.html)
 
 ### Woche 4 Applied Science
 

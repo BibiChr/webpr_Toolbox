@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function two() {
+    //     let x = 2;
+    //     return x;
+    // }
+    //
+    // try {
+    //     x;
+    //     document.writeln(String(true));
+    // } catch (e) {
+    //     document.writeln(false);
+    // }
+
+    // x = 0;
+    // function two () {
+    //    let x = 2;
+    //     return x;
+    // }();
+    //
+    // try{
+    //     document.writeln(x===0);
+    // }catch (e) {
+    //     document.writeln(false);
+    // }
+
+    // const F1 = x => (x => x);
+    // const F2 = y => (x => y);
+    // document.writeln(String(F1(F2) === F2(F2)));
+    // //
+    // // const id1 = x => x;
+    // // const id2 = y => y;
+    // // document.writeln(String(id1(id1) === id2(id1)));
+    // //
+    // const id = x => x;
+    // const a1 = y => id(y);
+    // const a2 = y => y;
+    // document.writeln(String(a1(id) === a2(id)));
+
+    // const id3 = x => x;
+    // const konst = x => y => x;
+    // const F3 = x => y => konst(id)(x)(y);
+    // const F4 = x => konst(id)(x);
+    // const F5 = konst(id);
+    // document.writeln(String(F5 === F4));
+    //
+    const id = x => x;
+    const konst = x => y => x;
+    const F6 = x => y => konst(id)(x)(y);
+    const F7 = x => konst(id)(x);
+    const F8 = konst(id);
+    document.writeln(String(F6(F6)(F6) === F7(F6)));
+
+
+
+
+    // const id = y => y;
+    // const fst = x => y => x;
+    // const kite0 = x => y => y;          //erweitern um id
+    // const kite1 = x => y => id(y);      //eta => kürzen, weil der letzte Parameter auf der rechten Seite, der gleiche ist, wie links
+    // const kite2 = x =>      id;         //erweitern um konst
+    // const kite3 = x =>   konst(id)(x);  //eta
+    // const snd = konst(id);
+    //
+    // document.writeln(String(kite(konst)(id) === id));
+</script>
+</body>
+</html>

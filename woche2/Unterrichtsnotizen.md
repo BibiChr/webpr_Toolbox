@@ -1,16 +1,8 @@
 # Woche 2
 
-## Wichtigster Input
-
-- Begriffsdefinitionen
-- Was sind Funktionen
-- Man kann Funktionen in weiteren Konstanten speichern
-
 ## Schnelle Notizen
 
-- Es gibt keinen Compiler. Deshalb erhält man keine Fehlerausgabe. Es "passiert" dann einfach nichts.
-- Vergiss nicht die Returns in Funktionen. Dies führt zu Problemen.
-- Vergiss nicht das Semikolon!
+- Nutze immer const. Ändere es später zu let. Nutze kein var.
 
 ## "Hash"
 
@@ -24,7 +16,7 @@ const variable = {haha: "huhu", huhu: "haha"};
 
 ## Scopes
 
-Es gibt nur den window scope -> global
+Es gibt nur den window scope → global
 
 und den function scope -> function
 <br> die variablen sind immer in der sie umgebenen funktion
