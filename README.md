@@ -26,6 +26,12 @@ Links zu internen files: [Notizen](woche1/Unterrichtsnotizen.md)<br>
 
 ### Woche 2 Scientific foundations
 
+- [Präsentation](praesentationen/WebProgramming_2_Lambda.pdf)
+- [Unterrichtnotizen](woche2/Unterrichtsnotizen.md)
+- Mitschrieb von [scopeTest.html](woche2/own/scopeTest.html)
+- Kopie der originalen [scopeTest.html](woche2/input/scopeTest.html)
+- Code snippets für das [Quiz](woche2/own/quizCode.html)
+
 ### Woche 3 Algebraic Data Types, Snake
 
 ### Woche 4 Applied Science
