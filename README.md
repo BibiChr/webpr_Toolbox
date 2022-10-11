@@ -45,6 +45,12 @@ Links zu internen files: [Notizen](woche1/Unterrichtsnotizen.md)<br>
 
 ### Woche 4 Applied Science
 
+- [Präsentation](praesentationen/WebProgramming_4_MapFilterReduce.pdf)
+- [Unterrichtnotizen](woche4/Unterrichtsnotizen.md)
+- Order für [lambdaTest](woche4/lambda)
+- Order für [snake](woche4/snake)
+- Code snippets für das [Quiz](woche4/quizCode.html)
+
 ### Woche 5 Scripting, PWA, Plotter, Excel
 
 ### Woche 6 Objects
