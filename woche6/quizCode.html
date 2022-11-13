@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const Person = name => {
+        let age = 0;
+        return {
+            getAge: () => age,
+            setAge: newAge => age = newAge,
+            getName: () => name,
+            setName: newName => name = newName
+        }
+    };
+    const me1 = Person("Myself");
+    me1.setName("Sherlock");
+    document.writeln(String(me1.getName()  === "Sherlock"));
+
+
+    const me2 = Person("Myself");
+    me2.age = 50;
+    document.writeln(String(me2.getAge()  === 50));
+
+
+    const me3 = Person("Myself");
+    me3.setAge(50);
+    document.writeln(String(me3.getAge()  === 50));
+
+
+    const me4 = Person("Myself");
+    me4.name = "***";
+    document.writeln(String(me4.getName()  === "***"));
+
+
+    document.writeln("<br /><br /><br />");
+
+    function Empty1() {}
+    const empty1 = new Empty1();
+    Empty1.prototype.answer = 42;
+    document.writeln(String(empty1.answer === 42));
+
+
+    const empty2 = Empty1;
+    document.writeln(String(empty2 instanceof Empty1));
+
+
+    const empty3 = new Empty1;
+    document.writeln(String(empty3 instanceof Empty1));
+
+    const empty4 = new Empty1;
+    const also = new Empty1;
+    Empty1.prototype.answer = 42;
+    document.writeln(String(empty4.answer === 42 && also.answer === 42));
+</script>
+</body>
+</html>
