@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // class Person{
+    //     constructor(name) {
+    //         this.name = name;
+    //     }
+    //     isCool(){ return this.name.length > 3 };
+    // }
+    //
+    // // const p1 = new Person("Myself");
+    // // p1.prototype.isCool() = () => true;
+    // // document.writeln(String(p1.isCool()));
+    // document.writeln("false");
+    //
+    // const p2 = new Person("Myself");
+    // document.writeln(String(p2.name === "Myself"));
+    //
+    // const p3 = new Person("Myself");
+    // Person.prototype.isCool = () => true;
+    // document.writeln(String(p3.name === "Myself"));
+    //
+    // const p4 = new Person("Myself");
+    // document.writeln(String(p4.isCool()));
+    //
+    // const p5 = new Person("Myself");
+    // const joe = {
+    //     name: "joe",
+    //     cool: p5.isCool
+    // };
+    // document.writeln(String(joe.cool()));
+    //
+    // class Person2{
+    //     constructor(name) {
+    //         this.name = name;
+    //     }
+    //     isCool(){ return name === "Myself"};
+    // }
+    // const p6 = new Person2("Myself");
+    // document.writeln(String(p6.isCool()));
+    //
+    // // class Person3{
+    // //     constructor(name) {
+    // //
+    // //     }
+    // //     isCool(){ return this.name.length > 3 };
+    // // }
+    // // const p7 = new Person3("Dierk");
+    // // document.writeln(String(p7.isCool()));
+    // document.writeln("false");
+    //
+    //
+    // const p8 = new Person("Myself");
+    // p8.isCool = () => true;
+    // document.writeln(String(p8.isCool()));
+    //
+    // class Person4{
+    //     isCool(){ return this.name.length > 3 };
+    // }
+    // const p9 = new Person4();
+    // p9.name ="Dierk";
+    // document.writeln(String(p9.isCool()));
+
+
+    // class Person {}
+    // class Student {}
+    // const s = new Student();
+    // Object.setPrototypeOf(Student, Person);
+    // document.writeln(String (s instanceof Person));
+    //
+    // class Person {}
+    // class Student {}
+    // const s = new Student();
+    // Object.setPrototypeOf(Student.prototype, Person.prototype);
+    // document.writeln(String (s instanceof Person));
+    //
+    // class Person {}
+    // const p = {};
+    // const s = new Student();
+    // Object.setPrototypeOf(p, Person.prototype);
+    // document.writeln(String (p instanceof Person));
+
+    // class Person {
+    //     constructor(name) {
+    //         this.name = name;
+    //     }
+    //     isCool() { return this.name.length > 3};
+    // }
+    // const p = new Person();
+    // document.writeln(String (p instanceof Person));
+
+    // class Person {}
+    // class Student {};
+    // const s = new Student();
+    // Object.setPrototypeOf(s, Person.prototype);
+    // document.writeln(String (s instanceof Person));
+
+    // class Person {}
+    // class Student {};
+    // const s = new Student();
+    // Object.setPrototypeOf(s, Student.prototype);
+    // document.writeln(String (s instanceof Person));
+
+    // class Person {}
+    // class Student extends Person {};
+    // const s = new Student();
+    // document.writeln(String (s instanceof Person));
+
+    // class Person {}
+    // const p = {};
+    // Object.setPrototypeOf(p, Person);
+    // document.writeln(String (p instanceof Person));
+
+
+    // Array.prototype.eq = function (ys) {
+    //     if(this.length === ys.length){
+    //         for (let i = 0; i< this.length; i++){
+    //             if(this[i] !== ys[i]){
+    //                 return false;
+    //             }
+    //         }
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+    //
+    // const xs1_ = [1,3,4];
+    // const ys1_ = [1,3,3];
+    //
+    // document.writeln(String(xs1_.eq(ys1_)));
+    // // document.writeln(String(xs1_.eq(ys1_) && ! xs2_.eq(ys2_) && xs3_.eq(ys3_) && ! xs3_.eq(ys4_) && ! xs4_.eq(ys3_)));
+
+    const inc = x => x + 1;
+    const double = x => x * 2;
+
+    Function.prototype.then = function (nextFunction) {
+        return nextFunction(this.arguments);
+        // return nextFunction(this);
+        // return 1;
+    }
+
+
+    // document.writeln(String(inc (1) === 2));
+    document.writeln(String(inc.then(inc) (1) === 2));
+
+</script>
+</body>
+</html>
