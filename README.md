@@ -53,7 +53,15 @@ Links zu internen files: [Notizen](woche1/Unterrichtsnotizen.md)<br>
 
 ### Woche 5 Scripting, PWA, Plotter, Excel
 
+- [Präsentation](praesentationen/WebProgramming_5_Scripting.pdf)
+- [Unterrichtnotizen](woche5/Unterrichtsnotizen.md)
+- Code snippets für das Quiz: [View](woche5/QuizView.html) und [Script](woche5/quizCode.js)
+
 ### Woche 6 Objects
+
+- [Präsentation](praesentationen/WebProgramming_6_Objects.pdf)
+- [Unterrichtnotizen](woche6/Unterrichtsnotizen.md)
+- Code snippets für das [Quiz](woche6/quizCode.html)
 
 ### Woche 7 Classes
 
