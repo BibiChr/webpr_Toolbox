@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function Todo(text) {
+    //     let done = false;
+    //     const check = () => done = true;
+    //     // function check() {done = true}
+    //     return {
+    //         getText: () => text,
+    //         isDone: () => done,
+    //         check: check
+    //     }
+    // }
+    //
+    // let todo = Todo("buy milk");
+    // todo.check();
+    //
+    // document.writeln(String(todo.isDone()));
+
+    //
+    // function handle(count, callback) {
+    //     const result = [];
+    //     for (let i = 0; i< count; i++){
+    //         callback(result);
+    //     }
+    //     return result;
+    // }
+    //
+    //
+    // document.writeln(String(handle (  3, it => it.push(1) ).length === 3));
+
+
+    const failsafe = defaultValue => callbackFunction => anArgument => {
+        try {
+            return callbackFunction(anArgument)
+        } catch (e) {
+            return defaultValue;
+        }
+    };
+    const doError = x => { throw new Error()};
+    const errorCount = failsafe(1)(doError);
+
+    document.writeln(String(failsafe(false)(x=>x)(true)));
+    document.writeln(String(failsafe(true)(doError)(null)));
+    document.writeln(String(errorCount(null) === 1));
+
+</script>
+</body>
+</html>
