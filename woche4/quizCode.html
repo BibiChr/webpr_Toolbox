@@ -7,32 +7,9 @@
 <body>
 <script>
 
-    <!--           Left("can")(1)(0) -->
-                   <!--  1("can") -->
-    const Left   = x => f => g => f (x);
-    const Right  = x => f => g => g (x);
-    const either = e => f => g => e (f) (g);
-    const id = x => x;
+    document.writeln(String( ))
+    document.writeln(String( ))
 
-   function eShow(f){
-
-   }
-
-
-    const x_ = Math.random();
-    const safeDiv = num => divisor =>
-        divisor === 0
-            ? Left  ("Cannot divide by 0")
-            : Right (num / divisor);
-
-    document.writeln(String(safeDiv(1)(0)));
-    document.writeln("<br />");
-    document.writeln(String(safeDiv(x_)(1)));
-    document.writeln("<br />");
-
-    // document.writeln(String(eShow( safeDiv(1)(0))));
-    document.writeln(String(eShow( safeDiv(1)(0))  === "Cannot divide by 0"));
-    document.writeln(String(eShow( safeDiv(x_)(1)) === "Result is: "+x_));
 </script>
 </body>
 </html>

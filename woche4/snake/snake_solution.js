@@ -50,8 +50,7 @@ const log = s => console.error(s);
 
 function start() {
     safeGetElementById("canvas")
-        (log)
-        (startWithCanvas)
+    Right (result)   (log)     (startWithCanvas)
 }
 
 const startWithCanvas = canvas => {
