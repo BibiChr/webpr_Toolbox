@@ -3,6 +3,7 @@
 Diese Toolbox ist Teil des Moduls Web Programming (EN) 22HS 5iCbb.<br>
 Es gilt als Zusammenfassung des Modulinhaltes und soll über die Zeit ein Nachschlagewerk mit einer
 Sammlung von Code snippets werden.
+Ausserdem ist es mein Repository, in welchem ich den Unterrichtsinhalt für mich sammle.
 
 # MD Sprache
 
@@ -17,7 +18,11 @@ Links zu internen files: [Notizen](woche1/Unterrichtsnotizen.md)<br>
 ## Programme
 
 - [Snake](woche1/snake)
+- [snake inklusive Lösung](woche4/snake)
 - [Ball](woche2/ball)
+- [Excel inklusive Lösung](woche5/excel)
+- [infection](woche6/infection)
+- [oopsie](woche6/oopsie)
 
 ## Unterrichtsnotizen
 
@@ -48,7 +53,6 @@ Links zu internen files: [Notizen](woche1/Unterrichtsnotizen.md)<br>
 - [Präsentation](praesentationen/WebProgramming_4_MapFilterReduce.pdf)
 - [Unterrichtnotizen](woche4/Unterrichtsnotizen.md)
 - Order für [lambdaTest](woche4/lambda)
-- Order für [snake](woche4/snake)
 - Code snippets für das [Quiz](woche4/quizCode.html)
 
 ### Woche 5 Scripting, PWA, Plotter, Excel
@@ -64,6 +68,10 @@ Links zu internen files: [Notizen](woche1/Unterrichtsnotizen.md)<br>
 - Code snippets für das [Quiz](woche6/quizCode.html)
 
 ### Woche 7 Classes
+
+- [Präsentation](praesentationen/WebProgramming_6_Objects.pdf)
+- [Unterrichtnotizen](woche6/Unterrichtsnotizen.md)
+- Code snippets für das [Quiz](woche6/quizCode.html)
 
 ### Woche 8 Moves, User Interfaces
 

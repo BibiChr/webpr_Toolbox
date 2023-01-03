@@ -136,19 +136,77 @@
     // document.writeln(String(xs1_.eq(ys1_)));
     // // document.writeln(String(xs1_.eq(ys1_) && ! xs2_.eq(ys2_) && xs3_.eq(ys3_) && ! xs3_.eq(ys4_) && ! xs4_.eq(ys3_)));
 
-    const inc = x => x + 1;
-    const double = x => x * 2;
+    // const inc = x => x + 1;
+    // const double = x => x * 2;
+    //
+    // Function.prototype.then = function (nextFunction) {
+    //     return nextFunction(this.arguments);
+    //     // return nextFunction(this);
+    //     // return 1;
+    // }
+    //
+    //
+    // // document.writeln(String(inc (1) === 2));
+    // document.writeln(String(inc.then(inc) (1) === 2));
 
-    Function.prototype.then = function (nextFunction) {
-        return nextFunction(this.arguments);
-        // return nextFunction(this);
-        // return 1;
+    // const idPromise = x => new Promise(resolve => resolve(x));
+    //
+    // const writer = x => {
+    //     document.writeln(x);
+    //     return idPromise(x);
+    // }
+    // const filterEven = n => n % 2 === 0 ? n : undefined;
+    // const inc = n => n + 1;
+    // // const filterEven = n => {if(n % 2 === 0 ) return n; else throw Error("not even") };
+    //
+    //
+    // idPromise(1)
+    //     // .then(it=> {document.writeln(it); return idPromise(it)})
+    //     .then(writer)
+    //     .then(it=> document.writeln(it))
+    //     // .then(writer)
+        // .then(it => it)
+        // .then(it => document.writeln(it))
+        //     .then(it =>  it+1
+        //     // {
+        //         // document.writeln(it);
+        //         // return it;
+        //     // }
+        //     )
+        // .then(inc)
+        // .then(writer)
+        // .then(filterEven)
+        // .then(it => it + 1)
+        // .then(writer)
+        // .catch(err => {     })
+    //     // .then(it => document.writeln(it));
+
+
+    const idPromise = x => new Promise(resolve => resolve(x));
+    const failPromise = err => new Promise((resolve, reject) => reject(err));
+    const writer = x => {
+        document.writeln(x);
+        return idPromise(x);
     }
+    const inc = n => n + 1;
+    const filterEven = n => n % 2 === 0 ? idPromise(n): failPromise("not even");
+    //
+    // const foo = async i => {
+    //     let x = await idPromise(i);
+    //     while(x < 4){
+    //         x= await filterEven(x);
+    //         x = await writer(x);
+    //         x = await inc(x);
+    //     }
+    // };
+    // foo(1)
 
 
-    // document.writeln(String(inc (1) === 2));
-    document.writeln(String(inc.then(inc) (1) === 2));
-
+    const foo = async i => {
+        let x = await idPromise(i);
+        x = await writer(x);
+    };
+    foo(1)
 </script>
 </body>
 </html>

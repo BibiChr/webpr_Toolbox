@@ -6,7 +6,6 @@
 ( () => {
     const ok = [];
 
-
     const collect = [];
 
     (10).times( n => collect.push(n) );

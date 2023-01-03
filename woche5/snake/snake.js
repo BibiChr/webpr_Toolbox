@@ -1,6 +1,7 @@
 // requires ../lambda/lambda.js
 
 
+
 const north = pair( 0)(-1);
 const east  = pair( 1)( 0);
 const south = pair( 0)( 1);
