@@ -69,12 +69,16 @@ Links zu internen files: [Notizen](woche1/Unterrichtsnotizen.md)<br>
 
 ### Woche 7 Classes
 
-- [Präsentation](praesentationen/WebProgramming_6_Objects.pdf)
-- [Unterrichtnotizen](woche6/Unterrichtsnotizen.md)
-- Code snippets für das [Quiz](woche6/quizCode.html)
+- [Präsentation](praesentationen/WebProgramming_7_Classes.pdf)
+- [Unterrichtnotizen](woche7/Unterrichtsnotizen.md)
+- Code snippets für das [Quiz](woche7/quizCode.html)
 
 ### Woche 8 Moves, User Interfaces
 
+- [Präsentation](praesentationen/WebProgramming_8_Optional_Typing.pdf)
+- [Unterrichtnotizen](woche8/Unterrichtsnotizen.md)
+- Code snippets für das [Quiz](woche8/quizCode.html)
+- 
 ### Woche 9 UI Engineering
 
 ### Woche 10 Async Programming
