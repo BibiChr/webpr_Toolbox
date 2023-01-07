@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Aufgabe 18a
+    //const failSafe = defaultValue => callbackFunction => anArgument => {
+    //    try {
+    //        return callbackFunction(anArgument)
+    //    } catch (e) {
+    //        return defaultValue;
+    //    }
+    //};
+    ////const doError = x => {
+    ////    throw new Error()
+    ////};
+    ////const errorCount = failSafe(1)(doError);
+    ////
+    ////document.writeln(String(
+    ////    failSafe(false)(x => x)(true)
+    ////    && failSafe(true)(doError)(null)
+    ////    && errorCount(null) === 1));
+
+    //Aufgabe 19
+    //siehe ScreenShots im OneNote
+
+    //Aufgabe 20
+    //siehe ScreenShots im OneNote
+
+    //Aufgabe 20a
+    //// const Observable2 = value => {
+    ////     const listeners = [];
+    ////     return {
+    ////         onChange: callback => {
+    ////             listeners.push(callback);
+    ////             callback(value, value);
+    ////         },
+    ////         getValue: () => value,
+    ////         setValue: newValue => {
+    ////             if (value === newValue) return;
+    ////             const oldValue = value;
+    ////             value = newValue;
+    ////             listeners.forEach(callback => callback(value, oldValue));
+    ////         }
+    ////     }
+    //// };
+    //// let sum = 0;
+    //// const trackable = Observable2(0);
+    // trackable.onChange(val => sum += val);
+    ////
+    //// trackable.setValue(5);
+    //// trackable.setValue(1);
+    //// trackable.setValue(3);
+    ////
+    //// document.writeln(String(trackable.getValue() === 3));
+    //// document.writeln(String(sum === 9));
+    //Aufgabe 28a
+    const str2chars = str => [...str];
+    const isAlpha = char => char.match(/[a-z]/);
+    const palindrome2 = x => {
+        x = x.toLocaleLowerCase();
+        let stringArray = str2chars(x);
+        stringArray = stringArray.filter(char => isAlpha(char));
+        const stringArrayRevers = str2chars(stringArray).reverse();
+
+        if (stringArray.length !== stringArrayRevers.length) {
+            return false;
+        }
+        for (let i = 0; i < stringArray.length; i++) {
+            if (stringArray[i] !== stringArrayRevers[i]) {
+                return false;
+            }
+        }
+        return true;
+    };
+
+    const palindrome = x => {
+        const stringarray = str2chars(x.toLocaleLowerCase())
+            .filter(char => isAlpha(char));
+        const bool = stringarray.map((char, index) =>
+            char === stringarray[stringarray.length-index-1]
+        );
+        console.log(bool);
+        return !bool.includes(false);
+    };
+
+    document.writeln(String(palindrome("Amore, Roma!")));
+    document.writeln(String(palindrome("Madam, I'm Adam!")));
+    document.writeln(String(palindrome("Never odd or even.")));
+    document.writeln(String(!palindrome("Amore")));
+</script>
+</body>
+</html>

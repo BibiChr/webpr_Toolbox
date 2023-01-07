@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Aufgabe 28a
+    const str2chars = str => [...str];
+    const isAlpha = char => char.match(/[a-z]/);
+    const palindrome2 = x => {
+        x = x.toLocaleLowerCase();
+        let stringArray = str2chars(x);
+        stringArray = stringArray.filter(char => isAlpha(char));
+        const stringArrayRevers = str2chars(stringArray).reverse();
+
+        if (stringArray.length !== stringArrayRevers.length) {
+            return false;
+        }
+        for (let i = 0; i < stringArray.length; i++) {
+            if (stringArray[i] !== stringArrayRevers[i]) {
+                return false;
+            }
+        }
+        return true;
+    };
+
+    const palindrome = x => {
+        const stringarray = str2chars(x.toLocaleLowerCase())
+            .filter(char => isAlpha(char));
+        const bool = stringarray.map((char, index) =>
+            char === stringarray[stringarray.length-index-1]
+        );
+        console.log(bool);
+        return !bool.includes(false);
+    };
+
+    document.writeln(String(palindrome("Amore, Roma!")));
+    document.writeln(String(palindrome("Madam, I'm Adam!")));
+    document.writeln(String(palindrome("Never odd or even.")));
+    document.writeln(String(!palindrome("Amore")));
+</script>
+</body>
+</html>

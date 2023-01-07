@@ -3,7 +3,7 @@
 Diese Toolbox ist Teil des Moduls Web Programming (EN) 22HS 5iCbb.<br>
 Es gilt als Zusammenfassung des Modulinhaltes und soll über die Zeit ein Nachschlagewerk mit einer
 Sammlung von Code snippets werden.
-Ausserdem ist es mein Repository, in welchem ich den Unterrichtsinhalt für mich sammle.
+Des Weiteren befinden sich in diesem Repository die Unterlagen, welche durch den Dozenten zur Verfügung gestellt wurden.
 
 # MD Sprache
 
@@ -12,8 +12,6 @@ Bilder können so eingefügt werden: <img src='images/experiment.png' width='100
 Links zu
 webseiten: [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#d5e23464)<br>
 Links zu internen files: [Notizen](woche1/Unterrichtsnotizen.md)<br>
-
-## Wichtigste Code Snippets
 
 ## Programme
 
@@ -78,15 +76,30 @@ Links zu internen files: [Notizen](woche1/Unterrichtsnotizen.md)<br>
 - [Präsentation](praesentationen/WebProgramming_8_Optional_Typing.pdf)
 - [Unterrichtnotizen](woche8/Unterrichtsnotizen.md)
 - Code snippets für das [Quiz](woche8/quizCode.html)
-- 
+
 ### Woche 9 UI Engineering
+
+- [Präsentation](praesentationen/WebProgramming_9_MVC.pdf)
+- Code snippets für das [Quiz](woche9/quizCode.html)
 
 ### Woche 10 Async Programming
 
+- [Präsentation Version1](praesentationen/WebProgramming_10_Async.pdf);
+- [Präsentation Version2](praesentationen/WebProgramming_10_Async%202.pdf);
+- [Unterrichtnotizen](woche10/Unterrichtsnotizen.md)
+- Code snippets für das [Quiz](woche10/quizCode.html)
+
 ### Woche 11 Data Flow, Excel improved
+
+- [Präsentation](praesentationen/WebProgramming_11_DataFlow.pdf);
+- Code snippets für das [Quiz](woche11/quizCode.html)
 
 ### Woche 12 Modules
 
+- [Präsentation](praesentationen/WebProgramming_12_Modules.pdf);
+- Code snippets für das [Quiz](woche12/quizCode.html)
+
 ### Woche 13 Transpilers, TS, PS, Elm
 
-### Woche 14 Crazy JavaScript
+- [Präsentation](praesentationen/WebProgramming_13_Transpilers.pdf);
+- [Extra Präsentation](praesentationen/TS-PS-Elm-to-JS.pdf);
