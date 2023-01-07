@@ -1,4 +1,4 @@
-# Woche 7
+# Woche 8
 
 ## Schnelle Notizen
  - in ``` let obj = { x: x, y: y} ``` ist das erste x und das y automatisch in "", weil es der Key ist

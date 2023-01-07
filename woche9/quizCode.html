@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Aufgabe 19
+    // const Observable = value => {
+    //     const listeners = [];
+    //     return {
+    //         onChange: callback => listeners.push(callback),
+    //         getValue: () => value,
+    //         setValue: val => {
+    //             if (value === val) return;
+    //             value = val;
+    //             listeners.forEach(listener => listener(val));
+    //         }
+    //     }
+    // };
+    // const color = Observable('white');
+    // let observed = null;
+    // let observed = color.getValue();
+    // color.onChange(val => observed = val);
+    // let updateCount = 0;
+    // // const updateListener = val => updateCount++;
+    // color.onChange(_ => updateCount++);
+    // color.setValue('black');
+
+    // document.writeln(String(color.getValue() === 'white'));
+    // document.writeln(String(color.getValue() === 'black'));
+    // document.writeln(String(updateCount === 1));
+    // document.writeln(String(observed === color.getValue()));
+
+
+    //Aufgabe 20a
+    // const Observable2 = value => {
+    //     const listeners = [];
+    //     return {
+    //         onChange: callback => {
+    //             listeners.push(callback);
+    //             callback(value, value);
+    //         },
+    //         getValue: () => value,
+    //         setValue: newValue => {
+    //             if (value === newValue) return;
+    //             const oldValue = value;
+    //             value = newValue;
+    //             listeners.forEach(callback => callback(value, oldValue));
+    //         }
+    //     }
+    // };
+    // let sum = 0;
+    // const trackable = Observable2(0);
+    //trackable.onChange(val => sum += val);
+    //
+    // trackable.setValue(5);
+    // trackable.setValue(1);
+    // trackable.setValue(3);
+    //
+    // document.writeln(String(trackable.getValue() === 3));
+    // document.writeln(String(sum === 9));
+</script>
+</body>
+</html>
