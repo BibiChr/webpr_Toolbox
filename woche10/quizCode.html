@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // const idPromise = x => new Promise(resolve => resolve(x));
+    //
+    // const writer = x => {
+    //     document.writeln(x);
+    //     return idPromise(x);
+    // }
+    // const filterEven = n => n % 2 === 0 ? n : undefined;
+    // const inc = n => n + 1;
+    // // const filterEven = n => {if(n % 2 === 0 ) return n; else throw Error("not even") };
+    //
+    //
+    // idPromise(1)
+    //     // .then(it=> {document.writeln(it); return idPromise(it)})
+    //     .then(writer)
+    //     .then(it=> document.writeln(it))
+    //     // .then(writer)
+    // .then(it => it)
+    // .then(it => document.writeln(it))
+    //     .then(it =>  it+1
+    //     // {
+    //         // document.writeln(it);
+    //         // return it;
+    //     // }
+    //     )
+    // .then(inc)
+    // .then(writer)
+    // .then(filterEven)
+    // .then(it => it + 1)
+    // .then(writer)
+    // .catch(err => {     })
+    //     // .then(it => document.writeln(it));
+
+
+    // const idPromise = x => new Promise(resolve => resolve(x));
+    // const failPromise = err => new Promise((resolve, reject) => reject(err));
+    // const writer = x => {
+    //     document.writeln(x);
+    //     return idPromise(x);
+    // };
+    // const inc = n => n + 1;
+    // const filterEven = n => n % 2 === 0 ? idPromise(n): failPromise("not even");
+    // //
+    // // const foo = async i => {
+    // //     let x = await idPromise(i);
+    // //     while(x < 4){
+    // //         x= await filterEven(x);
+    // //         x = await writer(x);
+    // //         x = await inc(x);
+    // //     }
+    // // };F
+    // // foo(1)
+    //
+    //
+    // const foo = async i => {
+    //     let x = await idPromise(i);
+    //     x = await writer(x);
+    // };
+    // foo(1)
+
+
+    //Aufgabe 24a
+    // const NullSafe = x => {
+    //     const isNullSafe = y => y && y.then;
+    //     const maywrap = y => ______ //if y is not NullSafe yet, make it so
+    //     return {
+    //         then: fn => _____ //see(1)
+    //     }
+    // };
+    //
+    //
+    // let y;
+    // NullSafe(5)
+    //     .then(x => x * 2)
+    //     .then(x => NullSafe(x))
+    //     .then(x => y = x + 1)
+    //     .then(x => null)
+        // .then( x=> x.mustNotBeCalled)  != null && y === x*2+1
+
+</script>
+</body>
+</html>
