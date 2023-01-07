@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="dataflow/dataflow.js"></script>
+<script>
+    // let state = 3;
+    // const scheduler = Scheduler();
+    // scheduler.add(ok => {
+    //     setTimeout(_ => {
+    //         state = state - 2;
+    //         ok();
+    //     }, 100)
+    // });
+    // scheduler.add(ok => {
+    //     state = state - 1;
+    //     ok();
+    // });
+    // scheduler.add(ok => {
+    //     console.log(state);
+    //     ok();
+    // });
+    // console.log('x');
+
+    // let state = [0];
+    // const scheduler = Scheduler();
+    // scheduler.add(ok => {
+    //     setTimeout(_ => {
+    //        state.push(1);
+    //         ok();
+    //     }, 100)
+    // });
+    // scheduler.add(ok => {
+    //     state.push(2);
+    //     ok();
+    // });
+    // scheduler.add(ok => {
+    //     document.writeln(String(state));
+    //     // console.log(state);
+    //     ok();
+    // });
+    // document.writeln(String(state));
+
+
+    const x = DataFlowVariable(() => y() * 2);
+    let y = DataFlowVariable(() => 1);
+    // x();
+    // y = DataFlowVariable(() => 2);
+    document.writeln(x());
+</script>
+</body>
+</html>
